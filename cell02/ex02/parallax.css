@@ -1,0 +1,40 @@
+.palallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.minecraft {
+  background-image: url("https://t.ly/WGG6S");
+}
+
+.chicken {
+  background-image: url("https://t.ly/4K-S8");
+}
+
+.roblox {
+    background-image: url("https://t.ly/2Iw5y");
+}
+
+.textbox {
+  display: flex;
+  height: 40%;
+  align-items: end;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
