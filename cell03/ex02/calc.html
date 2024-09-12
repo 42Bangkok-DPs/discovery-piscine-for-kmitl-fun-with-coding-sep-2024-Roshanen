@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+        <input id="inp1" type="number" value="0">
+
+        <select name="ops" id="ops">
+         <option value="plus">+</option>
+         <option value="minu">-</option>
+         <option value="mult">*</option>
+         <option value="divi">/</option>
+         <option value="modu">%</option>
+        </select>
+
+        <input id="inp2" type="number" value="0">
+        <input type="submit" onclick="calculate()" value="Try me!">
+    </center>
+    <script>
+        function timeOut(){
+            setTimeout(() => {
+                alert("Please, use me...");
+                timeOut();
+            }, "30000");
+        } 
+        timeOut();
+        
+        function calculate(){
+            let op = document.getElementById("ops").value;
+            let inp1 = document.getElementById("inp1").value;
+            let inp2 = document.getElementById("inp2").value;
+            
+            let result = 0;
+            try {
+                inp1 = parseInt(inp1);
+                inp2 = parseInt(inp2);
+                if (inp1 < 0 || inp2 < 0){
+                    throw new TypeError("Error :(")
+                }
+
+                if (op == "plus"){
+                    result = inp1 + inp2;
+                } else if (op == "minu") {
+                    result = inp1 - inp2;
+                } else if (op == "mult") {
+                    result = inp1 * inp2;
+                } else if (op == "divi") {
+                    result = inp1 / inp2;
+                    if (inp2 == 0){
+                        result = "It’s over 9000!";
+                    }
+                } else {
+                    result = inp1 % inp2;
+                    if (inp2 == 0){
+                        result = "It’s over 9000!";
+                    }
+                }
+                console.log(result);
+                alert(result);
+
+            } catch ({ name, message }){
+                alert(message);
+            }
+        }
+    </script>
+</body>
+</html>

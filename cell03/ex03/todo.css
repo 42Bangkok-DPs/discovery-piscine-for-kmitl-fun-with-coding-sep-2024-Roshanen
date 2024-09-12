@@ -1,0 +1,10 @@
+.task {
+    margin: 10px;
+    padding: 5px;
+    background-color: chartreuse;
+    width: fit-content;
+}
+
+.task:hover {
+    cursor: pointer;
+}

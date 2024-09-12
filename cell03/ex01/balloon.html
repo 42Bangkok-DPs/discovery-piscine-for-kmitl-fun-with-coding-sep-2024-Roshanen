@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+</head>
+<body>
+    <div style="display: none;">
+        When a click occurs on the balloon, its size will grow by 10px while keeping its round
+        shape. With each click its color will go in that order from red to green, then blue and
+        back to red again.
+        Usually, this type of balloon is rather resistant but if its size becomes greater than
+        420px it will explode and return to its original size.
+        Small additional detail, when the mouse is in the balloon and leaves it, the size of the
+        balloon shrinks by 5px (the size of the balloon cannot go lower than 200px) and its color
+        changes in the reverse order than mentioned earlier.
+    </div>
+    <div id="balloon" style="height: 200px; width: 200px; background-color: red;border-radius: 50%;"
+        onclick="grow(this)" onmouseleave="shrink(this)">
+    </div>
+    <script>
+        function grow(ball){
+            let ballWidth_A10 = ball.offsetWidth + 10;
+            let ballHeight_A10 = ball.offsetHeight + 10;
+            ball.style.width = ballWidth_A10 + "px" ;
+            ball.style.height = ballHeight_A10 + "px";
+            if (ballWidth_A10 > 420 && ballHeight_A10 > 420){
+                ball.style.width = "200px" ;
+                ball.style.height = "200px";
+            }
+
+            let ballColor = ball.style.backgroundColor;
+            if (ballColor == "red"){
+                ball.style.backgroundColor = "green";
+            } else if (ballColor == "green"){
+                ball.style.backgroundColor = "blue";
+            } else {
+                ball.style.backgroundColor = "red";
+            }
+            // console.log(ball.style.width, ball.style.height);
+        }
+        function shrink(ball){
+            let ballWidth_M5 = ball.offsetWidth - 5;
+            let ballHeight_M5 = ball.offsetHeight - 5;
+            if (ballHeight_M5 >= 200 && ballWidth_M5 >= 200){
+                ball.style.width = ballWidth_M5 + "px" ;
+                ball.style.height = ballHeight_M5 + "px";
+
+                let ballColor = ball.style.backgroundColor;
+
+                if (ballColor == "red"){
+                    ball.style.backgroundColor = "blue";
+                } else if (ballColor == "blue"){
+                    ball.style.backgroundColor = "green";
+                } else {
+                    ball.style.backgroundColor = "red";
+                }
+            }
+        
+
+            // console.log(ball.style.width, ball.style.height);
+        }
+    </script>
+</body>
+</html>
