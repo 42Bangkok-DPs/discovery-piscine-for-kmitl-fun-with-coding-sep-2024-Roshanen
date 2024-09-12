@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .name1, .name2 {
+            box-shadow: 10px 10px 5px rgb(45, 55, 59);
+        }
+        .name1:hover, .name2:hover {
+            transform: scale(1.05);
+            transition: all 0.4s ease-in-out;   
+        }
+        img {
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+  </head>
+  <body class="bg-slate-700 text-gray-200">
+    <img src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg" alt="42 Logo">   
+    <div class="container1 flex flex-col items-center justify-center min-h-screen space-y-20">
+        <div class="item1 space-y-2">
+            <div class="text-6xl text-center font-bold">42 Bangkok</div>
+            <div class="text-6xl text-center font-bold">Rush Project</div>
+            <div class="text-5xl text-center text-gray-400">&lt; Welcome &gt;</div>
+        </div>
+
+        <div class="item2 text-6xl text-center flex justify-center w-full   ">
+            <button class="name1 bg-red-500 text-center mx-20 px-10 py-10 rounded-lg">
+                <a href="./kthongsa.html">kthongsa</a>
+            </button>
+            <button class="name2 bg-red-500 text-center mx-20 px-10 py-3 rounded-lg">
+                <a href="./palakorn.html">palakorn</a>
+            </button>
+        </div>    
+    </div>
+</body>
+</html>

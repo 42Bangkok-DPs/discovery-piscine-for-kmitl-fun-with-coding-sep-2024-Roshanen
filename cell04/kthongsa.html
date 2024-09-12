@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kthongsa's profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body class="bg-slate-800 text-white font-mono text-xl">
+    <!-- navbar -->
+    <div class="navbar sticky top-0 bg-slate-600/50 p-3 flex justify-between items-center">
+      <a href="./index.html" class="px-4 text-white">Home</a>
+      <button class="block md:hidden px-4 text-white focus:outline-none" id="menu-btn">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    
+      <div id="menu" class="hidden md:flex space-x-4">
+        <a href="#about" class="px-4 border-r-2 border-indigo-600 text-white">About</a>
+        <a href="#experience" class="px-4 border-r-2 border-indigo-600 text-white">Experience</a>
+        <a href="#contact" class="px-4 text-white">Contact</a>
+      </div>
+    </div>
+
+    <div class="main flex flex-col items-center gap-6 p-6 md:p-12">
+      <!-- box 1 -->
+      <div id="about" class="profile-img bg-slate-600/50 rounded-2xl">
+        <div class="aspect-w-1 aspect-h-1">
+          <img
+            class="w-full h-full max-w-lg min-w-[250px] object-cover rounded-2xl"
+            src="./public/kthongsa.jpg"
+            alt="profile-img"
+          />
+        </div>
+      </div>
+
+      <!-- box 2 -->
+      <div class="info bg-slate-600/50 rounded-2xl p-8">
+        <h1 class="text-2xl md:text-3xl">Name: Kachen Thongsawatwong</h1>
+        <h2 class="text-xl md:text-2xl">Intra: kthongsa</h2>
+        <h2 class="text-xl md:text-2xl">Study: Computer Engineering</h2>
+        <h2 class="text-xl md:text-2xl">Favorite: Minecraft, Chicken</h2>
+      </div>
+
+      <!-- box 3 -->
+      <div
+        id="experience" class="meme-container bg-slate-600/50 rounded-2xl p-8 w-full flex flex-col items-center"
+      >
+        <!-- in box 3 -->
+         <h2>Experience</h2>
+        <div class="icon-container flex flex-wrap justify-center gap-4 md:gap-8 p-4">
+          <div><i class="devicon-c-plain colored text-4xl"></i> C</div>
+          <div><i class="devicon-cplusplus-plain colored text-4xl"></i> C++</div>
+          <div><i class="devicon-python-plain colored text-4xl"></i> Python</div>
+          <div><i class="devicon-go-plain colored text-4xl"></i> Go</div>
+          <div><i class="devicon-javascript-plain colored text-4xl"></i> JavaScript</div>
+          <div><i class="devicon-typescript-plain colored text-4xl"></i> TypeScript</div>
+          <div><i class="devicon-mongodb-plain colored text-4xl"></i> MongoDB</div>
+          <div><i class="devicon-react-plain colored text-4xl"></i> React</div>
+          <div><i class="devicon-nestjs-plain colored text-4xl"></i> NestJS</div>
+          <div><i class="devicon-nextjs-plain colored text-4xl"></i> NextJS</div>
+          <div><i class="devicon-java-plain colored text-4xl"></i> Java</div>
+          <div><i class="devicon-bash-plain colored text-4xl"></i> Bash</div>
+          <div><i class="devicon-nodejs-plain colored text-4xl"></i> NodeJS</div>
+        </div>
+        <h1
+          class="flex justify-center p-8 underline underline-offset-4 text-xl md:text-2xl"
+        >
+          Can write all of this just give me Google!
+        </h1>
+      </div>
+
+      <!-- box 4 -->
+      <div id="contact" class="github-section bg-slate-600/50 rounded-2xl p-6 md:p-16 w-full flex flex-col items-center">
+        <div class="github-link w-fit h-fit">
+          <span>Contact</span>
+          <a href="https://github.com/Roshanen">
+            <img class="rounded-full w-16 h-16 md:w-24 md:h-24" src="https://avatars.githubusercontent.com/u/106764256?v=4" alt="github-profile" />
+          </a>
+          <span>guthib</span>
+        </div>
+      
+        <div class="repo-container flex flex-col gap-4 md:gap-8 mt-4 text-base md:text-xl">
+          <div class="text-base md:text-xl font-bold">Recommend Features</div>
+      
+          <div>
+            <a class="mr-1 md:mr-3 bg-white/25 p-1 rounded hover:text-green-400" href="https://github.com/Roshanen/muda">muda</a>
+            <span>The best useless repository for storing everything.</span>
+          </div>
+      
+          <div>
+            <a class="mr-1 md:mr-3 bg-white/25 p-1 rounded hover:text-green-400" href="https://github.com/Roshanen/Build-Socket-Programmings">Build-Socket-Programmings</a>
+            <span>The best effort to build socket programming with the most features but the lowest points.</span>
+          </div>
+      
+          <div>
+            <a class="mr-1 md:mr-3 bg-white/25 p-1 rounded hover:text-green-400" href="https://github.com/Roshanen/TEE-BOR-WEB-APPLICATION-DEVELOPMENT-MINI-PROJECT">TEE-BOR-WEB-APPLICATION-DEVELOPMENT-MINI-PROJECT</a>
+            <span>The best web to gather your friends but finally your friends ... bid.</span>
+          </div>
+      
+          <div>
+            <a class="mr-1 md:mr-3 bg-white/25 p-1 rounded hover:text-green-400" href="https://github.com/Roshanen/ComedyEngineerWithPlayground_Web">ComedyEngineerWithPlayground_Web</a>
+            <span>The best website that doesn't finish because I'm too lazy.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end box 4 -->
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+    
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
