@@ -38,7 +38,7 @@
             try {
                 inp1 = parseInt(inp1);
                 inp2 = parseInt(inp2);
-                if (inp1 < 0 || inp2 < 0){
+                if (inp1 < 0 || inp2 < 0 || isNaN(inp1) || isNaN(inp2)){
                     throw new TypeError("Error :(")
                 }
 
