@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Managers</title>
-    <link rel="stylesheet" href="todo.css">
-</head>
-<body>
+    <style>
+      body {
+        margin: 40px;
+        font-size: 20px;
+      }
+
+      input {
+        font-size: 20px;
+      }
+
+      .task {
+        margin: 15px;
+        padding: 5px;
+        background-color: chartreuse;
+        width: fit-content;
+        border-radius: 5px;
+      }
+
+      .task:hover {
+        border: 2px solid black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
     <button id="newTaskButton" onclick="createTask()">New</button>
     <div id="ft_list"></div>
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>

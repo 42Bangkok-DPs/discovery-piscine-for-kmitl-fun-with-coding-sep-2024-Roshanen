@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Managers</title>
-    <link rel="stylesheet" href="todo.css">
+    <link rel="shortcut icon" href="#">
+    <style>
+      body {
+        margin: 40px;
+        font-size: 20px;
+      }
+
+      input {
+        font-size: 20px;
+      }
+
+      .task {
+        margin: 15px;
+        padding: 5px;
+        background-color: chartreuse;
+        width: fit-content;
+        border-radius: 5px;
+      }
+
+      .task:hover {
+        border: 2px solid black;
+        cursor: pointer;
+      }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="todo.js"></script>
-</head>
-<body>
+    <script src="./todo.js"></script>
+  </head>
+  <body>
     <button id="newTaskBtn">New</button>
     <div id="ft_list"></div>
-</body>
+  </body>
 </html>
