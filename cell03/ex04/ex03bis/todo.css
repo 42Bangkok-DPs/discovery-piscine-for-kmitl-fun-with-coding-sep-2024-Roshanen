@@ -1,0 +1,21 @@
+body {
+    margin: 40px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+}
+
+.task {
+    margin: 15px;
+    padding: 5px;
+    background-color: chartreuse;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.task:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}

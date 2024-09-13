@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <center style="margin: 40px;">
+        <input id="inp1" type="text" value="0" style="font-size: 20px;text-align: center;">
+
+        <select name="ops" id="ops" style="font-size: 20px;">
+         <option value="plus">+</option>
+         <option value="minu">-</option>
+         <option value="mult">*</option>
+         <option value="divi">/</option>
+         <option value="modu">%</option>
+        </select>
+
+        <input id="inp2" type="text" value="0" style="font-size: 20px;text-align: center;">
+        <input type="submit" id="calculateBtn" value="Try me!" style="font-size: 20px;">
+    </center>
+    <script>
+        $(document).ready(function() {
+            function timeOut() {
+                setTimeout(() => {
+                    alert("Please, use me...");
+                    timeOut();
+                }, 30000);
+            }
+            timeOut();
+
+            function isValidNumber(value) {
+                return /^[+]?\d+([eE][+]?\d+)?$/.test(value.trim());
+            }
+
+            $('#calculateBtn').click(function() {
+                let op = $('#ops').val();
+                let inp1 = $('#inp1').val().trim();
+                let inp2 = $('#inp2').val().trim();
+                
+                if (!isValidNumber(inp1) || !isValidNumber(inp2)) {
+                    alert("Error :(");
+                    return;
+                }
+
+                inp1 = Number(inp1);
+                inp2 = Number(inp2);
+                
+                let result = 0;
+                
+                if (op === "plus") {
+                    result = inp1 + inp2;
+                } else if (op === "minu") {
+                    result = inp1 - inp2;
+                } else if (op === "mult") {
+                    result = inp1 * inp2;
+                } else if (op === "divi") {
+                    if (inp2 === 0) {
+                        result = "It’s over 9000!";
+                    } else {
+                        result = inp1 / inp2;
+                    }
+                } else if (op === "modu") {
+                    if (inp2 === 0) {
+                        result = "It’s over 9000!";
+                    } else {
+                        result = inp1 % inp2;
+                    }
+                }
+                
+                console.log(result);
+                alert(result);
+            });
+        });
+    </script>
+</body>
+</html>
