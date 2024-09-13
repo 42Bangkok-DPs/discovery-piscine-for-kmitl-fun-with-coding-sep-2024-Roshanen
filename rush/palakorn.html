@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>palakorn 's profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>      
+    <style>
+        li, .text2 {
+            color: rgb(179, 179, 179);
+        }
+        strong {
+            color: aliceblue;
+        }
+
+    </style> 
+  </head>
+  <body class="bg-slate-800 text-white font-mono text-xl">
+    <!-- navbar -->
+    <div class="navbar sticky top-0 bg-slate-600/50 p-3 flex justify-between items-center">
+      <a href="./index.html" class="px-4 text-white">Home</a>
+      <button class="block md:hidden px-4 text-white focus:outline-none" id="menu-btn">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    
+      <div id="menu" class="hidden md:flex space-x-4">
+        <a href="#about" class="px-4 border-r-2 border-indigo-600 text-white">About</a>
+        <a href="#tools" class="px-4 border-r-2 border-indigo-600 text-white">Tools & Languages</a>
+        <a href="#contact" class="px-4 text-white">Contact</a>
+      </div>
+    </div>
+
+    <div class="main flex flex-col items-center gap-6 p-6 md:p-12">
+      <!-- box 1 -->
+      <div id="about" class="profile-img bg-slate-600/50 rounded-2xl">
+        <div class="aspect-w-1 aspect-h-1"> 
+          <img
+            class="w-full h-full max-w-lg min-w-[250px] object-cover rounded-2xl"
+            src="./public/palakorn_img.jpg"
+            alt="profile-img"
+          />
+        </div>
+      </div>
+
+      <!-- box 2 -->
+      <div class="info bg-slate-600/50 rounded-2xl p-8">
+        <h1 class="text-2xl md:text-3xl">Name : Patiparn Lakorn</h1>
+        <h2 class="text-xl md:text-2xl">Intra : palakorn</h2>
+        <h2 class="text-xl md:text-2xl">Study : Computer Science</h2>
+        <h2 class="text-xl md:text-2xl">Interest : Data, AI and Web Developer</h2>
+      </div>
+
+      <!-- box 3 -->
+      <div
+        id="tools" class="meme-container bg-slate-600/50 rounded-2xl p-8 w-full flex flex-col items-center"
+      >
+        <!-- in box 3 -->
+         <h2>Tools & Languages</h2>
+        <div class="icon-container flex flex-wrap justify-center gap-4 md:gap-8 p-4">
+          <div><i class="devicon-c-plain colored text-4xl"></i> C</div>
+          <div><i class="devicon-python-plain colored text-4xl"></i> Python</div>
+          <div><i class="devicon-java-plain colored text-4xl"></i> Java</div>
+          <div><i class="devicon-bash-plain colored text-4xl"></i> Bash</div>
+          <div><i class="devicon-tensorflow-original colored text-4xl"></i>Tensorflow</div>
+          <div><i class="devicon-numpy-plain colored text-4xl"></i>Numpy</div>
+          <div><i class="devicon-pandas-plain colored text-4xl"></i>Pandas</div>
+          <div><i class="devicon-matplotlib-plain colored text-4xl"></i>Matplotlib</div>
+          <div><i class="devicon-scikitlearn-plain colored text-4xl"></i>Scikit-learn</div>
+          <div><i class="devicon-docker-plain colored text-4xl"></i>Docker</div>
+        </div>
+        
+        <h1
+          class="flex justify-center p-8 underline underline-offset-4 text-xl md:text-2xl"
+        >
+          Can write all of this just give me Google & ChatGPT! 
+        </h1>
+      </div>
+
+      <!-- box 4 -->
+      <div id="contact" class="github-section bg-slate-600/50 rounded-2xl p-6 md:p-16 w-full flex flex-col items-center">
+        <div class="github-link w-fit h-fit">
+          <div class="font-bold text-center mb-5">Contact & Experiences</div>
+          <div class="container flex justify-around w-80">
+            <div class="github">
+                <a href="https://github.com/khetpatiparn">
+                    <img class="rounded-full w-16 h-16 md:w-24 md:h-24" src="https://avatars.githubusercontent.com/u/86398502?v=4" alt="github-profile" />
+                </a>
+                <div class="text-center">Github</div>
+            </div>
+            <div class="linkedin">
+                <!-- <div class="badge-base LI-profile-badge" data-locale="th_TH" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="khetpatiparn" data-version="v1"> -->
+                    <a class="badge-base__link LI-simple-link" href="https://th.linkedin.com/in/khetpatiparn?trk=profile-badge">
+                        <img class="rounded-full w-16 h-16 md:w-24 md:h-24" src="./public/palakorn_img.jpg" alt="linkedin-profile" />
+                    </a>
+                    <div class="text-center">Linkedin</div>
+                <!-- </div> -->
+            </div>
+          </div>
+        </div>
+    
+      
+        <div class="repo-container flex flex-col gap-4 md:gap-8 mt-4 text-base md:text-xl">
+            <div class="text-base md:text-xl font-bold">Super AI Engineer Season 3<br>Jan 2023 - Sep 2023
+                <ul>
+                    <li>
+                        <strong>Level 1:</strong> Achieved in AI academic online course - MOOC AIAT for Fundamental Level.<br>
+                        Attended Hackathon Competition about Image Processing, Signal Processing, Natural Language Processing.
+                    </li>
+            
+                    <li>
+                        <strong>Level 2:</strong> It’s a Hackathon competition in both online and onsite form for 9 weeks, working with 23 other participants in the team for 5 subjects as follows:
+                        <ul>
+                            <li><strong>Data Science:</strong> Prediction about poverty population ratio from other open-source data, for example, Google Earth Engine (GEE) that is satellite data.</li>
+                            <li><strong>Image Processing:</strong> Image search for logo products and medical image object detection.</li>
+                            <li><strong>Internet of Things and Robotics:</strong> Controlled turtlebot3 with a reinforcement learning model to move through obstacles and avoid colliding with the wall.</li>
+                            <li><strong>Natural Language Processing:</strong> Built a Question Answering chatbot about investment consulting from documents, and the chatbot can convert to chitchat mode for a relaxed conversation.</li>
+                            <li><strong>Signal Processing:</strong> Classification of human activities (e.g., walk, run, jump, etc.) from signal datasets collected with an ultra-wideband sensor. Also, classification of signals from fast radio bursts.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="repo-container flex flex-col gap-4 md:gap-8 mt-4 text-base md:text-xl"></div>
+            <div class="text-base md:text-xl font-bold">AI Developer - วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต<br>May 2023 - Sep 2023
+               <div class="text2">I developed a AI-driven chatbot for basic health information and symptom checking. I was responsible for connecting the chatbot to various APIs, managing symptom data, and integrating the chatbot with platforms like LINE and Facebook.</div>
+            </div>
+        </div>
+
+      </div>    
+      <!-- end box 4 -->
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+    
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
